@@ -27,3 +27,10 @@ Route::post('/planActivity/store', [App\Http\Controllers\PlanActivityController:
 
 Route::get('management/wilayah', [App\Http\Controllers\ManagementWilayahController::class, 'index'])->name('management.wilayah.index');
 Route::post('management/wilayah/area/create', [App\Http\Controllers\ManagementWilayahController::class, 'createArea'])->name('management.wilayah.area.create');
+Route::get('management/wilayah/area/data', [App\Http\Controllers\ManagementWilayahController::class, 'dataArea'])->name('management.wilayah.area.data');
+
+Route::post('management/wilayah/wilayah/create', [App\Http\Controllers\ManagementWilayahController::class, 'createWilayah'])->name('management.wilayah.wilayah.create');
+Route::get('management/wilayah/wilayah/data', [App\Http\Controllers\ManagementWilayahController::class, 'dataWilayah'])->name('management.wilayah.wilayah.data');
+
+Route::post('management/wilayah/wisma/create', [App\Http\Controllers\ManagementWilayahController::class, 'createWisma'])->name('management.wilayah.wisma.create');
+Route::get('management/wilayah/wisma/data', [App\Http\Controllers\ManagementWilayahController::class, 'dataWisma'])->name('management.wilayah.wisma.data');
